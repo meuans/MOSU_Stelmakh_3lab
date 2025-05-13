@@ -10,7 +10,7 @@ namespace MOSU_Stelmakh_3lab
             {
                 double[] startPoint = new double[] { 1, 1 }; // початкова точка
                 double h = 10;
-                double eps = 0.01;
+                double eps = 0.01; //точність
 
                 Console.WriteLine("Початкова точка:");
                 PrintPoint(startPoint);
@@ -19,8 +19,8 @@ namespace MOSU_Stelmakh_3lab
 
                 Console.WriteLine("\n=== Результат ===");
                 PrintPoint(startPoint, "Точка оптимуму:");
-                Console.WriteLine($"Значення функції I = {Function(startPoint)}");
-                Console.WriteLine($"Кількість ітерацій: {steps}");
+                Console.WriteLine($"Значення функцiї I = {Function(startPoint)}");
+                Console.WriteLine($"Кiлькiсть iтерацiй: {steps}");
             }
 
             static double Function(double[] u)

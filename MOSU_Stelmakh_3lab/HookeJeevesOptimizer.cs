@@ -16,6 +16,13 @@ namespace MOSU_Stelmakh_3lab
 
             do
             {
+
+                Console.WriteLine($"\n--- Iтерацiя {step + 1} ---");
+                Console.WriteLine($"Поточна базисна точка: u[0] = {xb[0]:F5}, u[1] = {xb[1]:F5}");
+                Console.WriteLine($"Значення функцiї: I = {fb:F5}");
+                Console.WriteLine($"Поточна довжина кроку: h = {h:F5}");
+
+
                 f0 = fb;
                 point = (double[])xb.Clone();
                 x1 = (double[])point.Clone();
